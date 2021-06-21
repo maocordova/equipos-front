@@ -1,7 +1,7 @@
-import axios from 'axios'
+import httpClient from '../helper/httpClient'
 
-export default class ClientesService {
-    getClientes () {
-        return axios.get('http://localhost:8000/clientes').then(res => res.data)
+export default {
+    get () {
+      return httpClient.get('clientes')
     }
 }
