@@ -1,13 +1,28 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <Menubar :model="items">
-        <Button label="Salir" icon="pi pi-sign-out" />
-      </Menubar>
+    <div id="app">
+        <router-view />
     </div>
-    <router-view/>
-  </div>
 </template>
+<script>
+export default {
+    data() {
+        return {
+            items: [
+                {
+                    label:'Home',
+                    icon:'pi pi-fw pi-home',
+                    url:'/'
+                },
+                {
+                    label:'Clientes',
+                    icon:'pi pi-fw pi-user',
+                    url:'clientes'
+                }
+            ]
+        }
+    }
+}
+</script>
 
 <style>
 body{
@@ -35,34 +50,3 @@ body{
   color: #42b983;
 }
 </style>
-
-<script>
-  export default {
-    data() {
-      return {
-        items: [
-          {
-            label:'Home',
-            icon:'pi pi-fw pi-home',
-            url:'/'
-          },
-          {
-            label:'Clientes',
-            icon:'pi pi-fw pi-user',
-            url:'clientes'
-          },
-          {
-            label:'Equipos',
-            icon:'pi pi-fw pi-desktop',
-            url: 'equipos'
-          },
-          {
-            label:'Dispositivos',
-            icon:'pi pi-fw pi-print',
-            url: 'dispositivos'
-          }
-        ]
-      }
-    }
-  }
-</script>

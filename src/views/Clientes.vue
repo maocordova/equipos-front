@@ -1,16 +1,16 @@
 <template>
-    <Clients/>
+    <Clients />
 </template>
 
 <script>
-    import Clients from '../components/clientes'
+import Clients from '../components/Clientes'
 
-    export default {
-        name: "Clientes",
-        components: {
-            Clients
-        }
+export default {
+    name: "Clientes",
+    components: {
+        Clients
     }
+}
 </script>
 
 <style scoped>

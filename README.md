@@ -1,5 +1,5 @@
+[![Deploy Vue App](https://github.com/maocordova/equipos-front/actions/workflows/deploy.yml/badge.svg)](https://github.com/maocordova/equipos-front/actions/workflows/deploy.yml)
 # equipos-front
-
 ## Project setup
 ```
 npm install
