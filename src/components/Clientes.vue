@@ -6,6 +6,7 @@
                 {{ cliente.nombre }}
             </li>
         </ul>
+        <p>Loadded from {{ environment }}</p>
     </div>
 </template>
 <script>
@@ -15,7 +16,8 @@ export default {
     name: 'Clientes',
     data () {
         return {
-            clientes: []
+            clientes: [],
+            environment: process.env.VUE_APP_ENV
         }
     },
     mounted () {
